@@ -1,0 +1,17 @@
+using System;
+					
+public class Program
+{
+	public CharName yodie;
+	
+	public void Main()
+	{
+		yodie = new CharName();
+		
+		Console.WriteLine(yodie.yodieName); //testing how to comment on code!
+	}
+}
+public class CharName
+{
+	public string yodieName = "Yodie!";
+}
