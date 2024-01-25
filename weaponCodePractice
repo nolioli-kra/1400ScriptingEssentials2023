@@ -1,0 +1,30 @@
+using System;
+					
+public class Program
+{
+	public Weapon shotGun;
+	public PowerUp weaponPowerUp;
+	
+	public void Main()
+	{
+		shotGun = new Weapon();
+		weaponPowerUp = new PowerUp();
+		
+		shotGun.ammoCount++; 
+		shotGun.firePower += weaponPowerUp.powerLevel;
+		Console.WriteLine(shotGun.weaponName + " has " + shotGun.ammoCount + " ammo remaining!");
+		Console.WriteLine("Your " + shotGun.weaponName + " now has " + shotGun.firePower + " fire power!");
+	}
+}
+
+public class Weapon
+{
+	public int ammoCount = 10;
+	public string weaponName = "Shotgun";
+	public float firePower = 11.5f ;
+}
+
+public class PowerUp
+{
+	public float powerLevel = 2.5f;
+}
