@@ -5,7 +5,7 @@ public class ExamGrader
 	public static void Main()
 	{
 		Console.WriteLine("Please enter your Exam score out of 100.");
-		int examScore = Convert.ToInt32(Console.ReadLine());
+		int examScore = Convert.ToInt32(Console.ReadLine()); //changes the user input into a number the code can access for math and certain operations
 		if (examScore >= 90) {
 		Console.WriteLine("You got an A! Awesome!");
 		}
@@ -19,7 +19,7 @@ public class ExamGrader
 		Console.WriteLine("You got a D! Better luck next time!");
 		}
 		if (examScore <= 64) {
-		Console.WriteLine("You got an F! You stupid fr bruh ☠");
+		Console.WriteLine("You got an F! You stupid fr bruh ☠"); //writes a skull emoji to let you know you're really bad
 		}
 	}
 }
